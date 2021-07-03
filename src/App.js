@@ -45,7 +45,6 @@ function App() {
     const unSubscribe = auth.onAuthStateChanged((authUser) => {
       if (authUser) {
         //Giriş Yaptı
-        console.log(authUser);
         setUser(authUser);
       } else {
         //Çıkış Yaptı
